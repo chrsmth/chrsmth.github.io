@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>KeyClue 2024 - Solution Manual</title>
+    <meta name="description" content="description">
+
+    <link rel="stylesheet" href="https://chrsmth.github.io/main.css">
+
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://chrsmth.github.io/atom.xml">
+    
+
+    
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to content</a>
+    <div class="container">
+        <header> 
+            <h1 class="site-header">
+                <a href="https:&#x2F;&#x2F;chrsmth.github.io">JustPeanuts</a>
+            </h1>
+            <nav>
+                
+                
+                
+                <a  href="https:&#x2F;&#x2F;chrsmth.github.io&#x2F;about&#x2F;">About</a>
+                
+                
+            </nav>
+        </header>
+        <main id="main" tabindex="-1">
+            
+
+<article class="post">
+    <header>
+        <h1>KeyClue 2024 - Solution Manual</h1>
+    </header>
+    <div class="content">
+        <p>KeyClue is an annual <a href="https://en.wikipedia.org/wiki/Puzzle_hunt">puzzlehunt</a>/<a href="https://en.wikipedia.org/wiki/Alternate_reality_game">ARG</a> played by Engineers at the University of Calgary. Departments compete to find a key hidden somehwere in the City - solving puzzles and unwinding the story as they go. Any team that finds <em>the</em> key must replace it with a false one, so no team can be sure if they won until it's officially over.</p>
+<p>I played a lot of KeyClue in my undergrad, and this year I was involved in its development.</p>
+<p><img src="https://chrsmth.github.io/keyclue/book.jpeg" alt="book" /></p>
+<span id="continue-reading"></span><h3 id="preclue">PreClue</h3>
+<p>PreClue is a set of puzzles given months in advance to tease and promote the upcomming KeyClue</p>
+<p><a href="https://chrsmth.github.io/keyclue/preclue.pdf">preclue.pdf</a></p>
+<blockquote>
+<p>We are taking applications for a contract postiion at the Knowledge Extraction Comision (KEC). Please fill out an application form &amp; complete the screening excercise. Disregard the backside of each page. The federal government has instated an environmental policy that requires us to cut down on paper use. We are printing these documents on scrap paper left around the office.</p>
+</blockquote>
+<h3 id="preclue-solutions">PreClue Solutions</h3>
+<h4 id="screening-excercise">Screening Excercise</h4>
+<p><img src="https://chrsmth.github.io/keyclue/screening_excercise.jpeg" alt="screening_excercise.jpeg" /></p>
+<p>This can be solved by statistical analysis and word matching. There are many words that are easily guessed, especially since spaces are preserved: <em>Congradulations</em>, <em>KEC</em>, <em>Thanks</em>.</p>
+<p>This could also be easily dictionary attacked.</p>
+<p>It is a Vigenere cipher with key &quot;exam&quot;:</p>
+<blockquote>
+<p>Congratulations,
+<br />
+<br />
+We are thrilled to inform you that you have successfully passed the screening exercise for the Knowledge
+Extraction Commission (KEC) job application process. Your dedication and accomplishments have truly set you
+apart.
+<br />
+<br />
+No further action is required. The KEC Signals Intelligence team will automatically receive your completed
+test. A KEC team member will be in touch with you to guide you through the next steps of your application
+process. They will provide you with detailed information on what to expect and offer any assistance you may
+need.
+<br />
+<br />
+Once again, congratulations on this significant accomplishment. We look forward to the possibility of
+welcoming you to the Knowledge Extraction Commission and witnessing the positive impact we know you can
+make.
+<br />
+<br />
+Thanks,</p>
+<p>KEC Recruitment Team</p>
+</blockquote>
+<h4 id="disclosure-of-encoding-scheme">Disclosure of Encoding Scheme</h4>
+<p>Puzzle was lifted from <a href="https://xanthir.com/etc/nat/">an online tool</a>.</p>
+<p><img src="https://chrsmth.github.io/keyclue/encoding_scheme.jpeg" alt="encoding_scheme.jpeg" /></p>
+<p>This is solved by known plaintext attack. Start by looking up the <a href="https://oeis.org/">integer sequence codes</a> in the SCHEME section, and associate the plaintext integers with ciphertext. From there, the arithmatic rules can be infered.</p>
+<p>Here is the SCHEME section with some helpful annotation to facilitate infering the arithmatic rules.
+<img src="https://chrsmth.github.io/keyclue/encoding_scheme_solution.jpeg" alt="encoding_scheme_solution.jpeg" /></p>
+<p>The example can then be computed following these same arithmatic rules.</p>
+<p><img src="https://chrsmth.github.io/keyclue/encoding_scheme_EXAMPLE.jpeg" alt="encoding_scheme_EXAMPLE.jpeg" />
+This equals <code>7,569,674,675,698,967,768,569,466,765</code></p>
+<p>Interpreted as decimal utf8: <code>75 69 67 46 75 69 89 67 76 85 69 46 67 65</code>, it spells <code>KEC.KEYCLUE.CA</code></p>
+<h1 id="kickoff">Kickoff</h1>
+<p><a href="https://chrsmth.github.io/keyclue/sunday.pdf">sunday.pdf</a></p>
+<blockquote>
+<p>Thank you and congradulations on being selected for this contract position. We are your engineering liasons, Chris &amp; Mitchell. Enclosed is your first dosier which provides an overview of the current situation.</p>
+</blockquote>
+<blockquote>
+<p>Again please ignore the backsides of each page. They are completely unrelated to this case. This is part of a federal environmental policy to cut down paper use. We are printing on scrap paper left around the office.</p>
+</blockquote>
+<h3 id="sunday-solutions">Sunday Solutions</h3>
+<h4 id="pepsi-codes">PEPSI Codes</h4>
+<p><img src="https://chrsmth.github.io/keyclue/PEPSI.jpeg" alt="PEPSI.jpeg" /></p>
+<p>PEPSI codes were inteded as a joke. The KEC is generally incopetence &amp; inefficient, and inspite of the environmental policy, print a paper quota receipt after each print job.</p>
+<p>There was however an Easter Egg in the pepsi codes. If you interpreted the decimal numbers as ascii, in order, the pages read: <code>MARYNOTHERE</code>, which is intended to mean &quot;no hail mary here&quot;. PEPSI codes could have said anything, like <code>GLONKEYCLUE</code>, was another option.</p>
+<h4 id="intercepted-sms-mms-messages">Intercepted SMS, MMS Messages</h4>
+<p><img src="https://chrsmth.github.io/keyclue/intercepted_sms_text.jpeg" alt="intercepted_sms_text.jpeg" />
+<img src="https://chrsmth.github.io/keyclue/intercepted_sms.jpeg" alt="intercepted_sms.jpeg" /></p>
+<p>There are a few observations to be made about this puzzle:</p>
+<ul>
+<li>The bar graph has exactly 8 possible lengths</li>
+<li>The lengths are 11, 18, 25, 32, 39, 46, 53, 60</li>
+<li>The SMS conversation relates to Spotify &amp; song lengths</li>
+<li>The other terrorist puzzles from today are related barcodes</li>
+<li>TODO barcode leak hint</li>
+</ul>
+<p>Each group of 23 bars, starting from the beginning, can be interpreted as a spotify barcode</p>
+<p><img src="https://chrsmth.github.io/keyclue/intercepted_sms_image_group.jpeg" alt="intercepted_sms_image_group.jpeg" /></p>
+<p><img src="https://chrsmth.github.io/keyclue/spcode-2cCLKpb5ddVDjxUPw2sKVP.jpeg" alt="spcode-2cCLKpb5ddVDjxUPw2sKVP.jpeg" /></p>
+<p>This produces a list of songs with these song lengths:</p>
+<p><code>5:10 5:00 9:07 4.56 3:43 0:11 4:09 9:06 7:13 5:32</code></p>
+<p><code>51.05009074563430, -114.09906713532</code></p>
+<h4 id="social-media-leak">Social Media Leak</h4>
+<p><img src="https://chrsmth.github.io/keyclue/social_media_leak.jpeg" alt="social_media_leak.jpeg" /></p>
+<p>This is a <a href="https://en.wikipedia.org/wiki/MaxiCode">MaxiCode</a>.</p>
+<p>Transcribed it looks like this, but this won't scan</p>
+<p><img src="https://chrsmth.github.io/keyclue/maxicode_transcribed.jpeg" alt="maxicode_transcribed.jpeg" /></p>
+<p>The orientation patterns are missing.</p>
+<p><img src="https://chrsmth.github.io/keyclue/maxicode_orientation.jpeg" alt="maxicode_orientation.jpeg" /></p>
+<p>It scans after repairing the orientation pattern:</p>
+<pre><code>UNIMPORTANT THEY KNOW, FATAL THEY OWN.
+THE CHELTENHAM BENCH
+51.0861517533063,-114.098249714181
+</code></pre>
+<h4 id="sudoku-barcode">Sudoku Barcode</h4>
+<p><img src="https://chrsmth.github.io/keyclue/sudoku_joined.jpeg" alt="sudoku_joined.jpeg" /></p>
+<p>Solve the Sudokus and notice that when the pages are overlayed, the lines associate sudoku numbers with cells in the barcode. On the printed sheet, this is more obvious with the light shining through it.</p>
+<p><img src="https://chrsmth.github.io/keyclue/sudoku_overlay.jpeg" alt="sudoku_overlay.jpeg" /></p>
+<p>Colour in the center barcode using the colour to number associates in from the colour mixing diagrams, and the lines connecting sudoku numbers with cells in the barcode.</p>
+<p><img src="https://chrsmth.github.io/keyclue/rmqr.jpeg" alt="rmqr.jpeg" /></p>
+<p>This is 3 rMQR codes, one for each primary additive primary colour. Demuxing into 3 seperate rMQR codes and scanning yeilds:</p>
+<pre><code>Red: dont51.1072
+Green: give94-114
+Blue: kec.190140
+</code></pre>
+<pre><code>don&#x27;t give kec
+51.107294, -114.190140
+</code></pre>
+<h4 id="training-excercise">Training Excercise</h4>
+<p><img src="https://chrsmth.github.io/keyclue/coldcode.jpeg" alt="coldcode.jpeg" /></p>
+<p>This looks like <a href="https://en.wikipedia.org/wiki/X%26Y">Coldplays X&amp;Y album art</a>:</p>
+<p><img src="https://chrsmth.github.io/keyclue/xandy.jpeg" alt="xandy.jpeg" /></p>
+<p>Coldplays X&amp;Y is encoded using <a href="https://en.wikipedia.org/wiki/Baudot_code">Baudot code</a>. Using Baudot to decode the training excercise yeilds:</p>
+<pre><code>redeemthistokenforextracredit
+728493&amp;!
+</code></pre>
+<pre><code>Redeem this token for extra credit
+728493&amp;!
+</code></pre>
+<h1 id="monday">Monday</h1>
+<p><a href="https://chrsmth.github.io/keyclue/monday.pdf">monday.pdf</a></p>
+<p><a href="https://chrsmth.github.io/keyclue/card_order.txt">card_order.txt</a></p>
+<h3 id="monday-solutions">Monday Solutions</h3>
+<h4 id="phishing-attack">Phishing Attack</h4>
+<ul>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/1.mp4">1.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/2.mp4">2.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/3.mp4">3.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/4.mp4">4.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/5.mp4">5.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/6.mp4">6.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/7.mp4">7.mp4</a></li>
+</ul>
+<p>These are touch events on a smartphone. When overlayed with a keyboard and numpad, the </p>
+<p><img src="https://chrsmth.github.io/keyclue/phone_input.jpeg" alt="phone_input.jpeg" /></p>
+<ul>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/1_solution.mp4">1_solution.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/2_solution.mp4">2_solution.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/3_solution.mp4">3_solution.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/4_solution.mp4">4_solution.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/5_solution.mp4">5_solution.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/6_solution.mp4">6_solution.mp4</a></li>
+<li><a href="https://chrsmth.github.io/keyclue/phishing/7_solution.mp4">7_solution.mp4</a></li>
+</ul>
+<p>This yeilds:</p>
+<ul>
+<li>largest glacier in continental europe</li>
+<li>translate pascua</li>
+<li>obihiro junction</li>
+<li>68987706061</li>
+<li>fox to fox to fox</li>
+<li>conakry to kolente</li>
+<li>see you in the uhaul</li>
+</ul>
+<h4 id="artsy-image">Artsy Image</h4>
+<p><img src="https://chrsmth.github.io/keyclue/artwork.png" alt="artwork.png" /></p>
+<p>The Artsy Image is visually similar to paintings by Piet Mondrain.</p>
+<p><img src="https://chrsmth.github.io/keyclue/piet.jpeg" alt="piet.jpeg" /></p>
+<p>It is a <a href="https://en.wikipedia.org/wiki/Esoteric_programming_language#Piet">Piet program</a> that yeilds text when <a href="https://piet.bubbler.one/">executed</a> yeilds:</p>
+<p><code>We have hidden a bomb against the K.E.C.</code></p>
+<h4 id="data-exfiltration">Data Exfiltration</h4>
+<p><img src="https://chrsmth.github.io/keyclue/data_exfiltration.jpeg" alt="data_exfiltration.jpeg" /></p>
+<p>Using the phishing attack messages as hints, the associated google map photo spheres can be located:</p>
+<ul>
+<li><code>61.6599253,7.0441205</code></li>
+<li><code>-27.1376954,-109.3124782</code></li>
+<li><code>43.0684472,143.0368167</code></li>
+<li><code>-17.524517,-149.8449074</code></li>
+<li><code>61.1773526,-135.3915355</code></li>
+<li><code>9.992289,-12.7253903</code></li>
+</ul>
+<p>Using the KEC mapping tool to average these location yeilds</p>
+<p><code>50.904945, -114.034734</code></p>
+<h1 id="tuesday">Tuesday</h1>
+<p><a href="https://chrsmth.github.io/keyclue/tuesday.pdf">tuesday.pdf</a>
+TODO UHaul pictures</p>
+<h1 id="wednesday">Wednesday</h1>
+<p><a href="https://chrsmth.github.io/keyclue/wednesday.pdf">wednesday.pdf</a></p>
+<h1 id="thursday">Thursday</h1>
+<p><a href="https://chrsmth.github.io/keyclue/thursday.pdf">thursday.pdf</a></p>
+<p><a href="https://chrsmth.github.io/keyclue/kec_propaganda.mp4">kec_propaganda.mp4</a></p>
+
+    </div>
+
+    
+    <div class="article-info">
+        
+        <div class="article-date">18 January 2024</div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://chrsmth.github.io/tags/keyclue/">#keyclue</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+</article>
+
+
+        </main>
+        <footer>
+            <p>
+                © JustPeanuts 2024<br>
+                Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
+            </p>
+            <p>
+                
+                
+            </p>
+        </footer>
+    </div>
+
+    <div class="dark-mode-buttons">
+  <button class="dark-mode-button" id="dark-mode-on">
+    <img
+      src="https://chrsmth.github.io/dark_mode.svg"
+      width="24"
+      height="24"
+      alt="Dark mode"
+      aria-label="dark mode toggle"
+      title="Dark mode"
+    />
+  </button>
+  <button class="dark-mode-button" id="dark-mode-off">
+    <img
+      src="https://chrsmth.github.io/light_mode.svg "
+      width="24"
+      height="24"
+      alt="Light mode"
+      aria-label="light mode toggle"
+      title="Light mode"
+      style="filter: invert(1);"
+    />
+  </button>
+</div>
+<script>
+  const cls = document.body.classList;
+  const getSessionTheme = sessionStorage.getItem("theme");
+  if (getSessionTheme === "dark") {
+    cls.toggle("dark-mode", true);
+  } else if (getSessionTheme === "light") {
+    cls.toggle("dark-mode", false);
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    cls.toggle("dark-mode", true);
+  }
+  document
+    .getElementById("dark-mode-on")
+    .addEventListener("click", function (e) {
+      cls.toggle("dark-mode", true);
+      sessionStorage.setItem("theme", "dark");
+    });
+  document
+    .getElementById("dark-mode-off")
+    .addEventListener("click", function (e) {
+      cls.toggle("dark-mode", false);
+      sessionStorage.setItem("theme", "light");
+    });
+</script>
+<noscript>
+  <style>
+    .dark-mode-buttons {
+      display: none;
+    }
+  </style>
+</noscript>
+
+    
+</body>
+</html>
