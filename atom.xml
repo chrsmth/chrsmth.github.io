@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>JustPeanuts</title>
     <subtitle>description</subtitle>
-    <link href="https://chrsmth.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://chrsmth.github.io"/>
+    <link href="chrsmth.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="chrsmth.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-01-18T00:00:00+00:00</updated>
-    <id>https://chrsmth.github.io/atom.xml</id>
+    <id>chrsmth.github.io/atom.xml</id>
     <entry xml:lang="en">
         <title>KeyClue 2024 - Solution Manual</title>
         <published>2024-01-18T00:00:00+00:00</published>
@@ -14,12 +14,12 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://chrsmth.github.io/keyclue/" type="text/html"/>
-        <id>https://chrsmth.github.io/keyclue/</id>
+        <link rel="alternate" href="chrsmth.github.io/keyclue/" type="text/html"/>
+        <id>chrsmth.github.io/keyclue/</id>
         
         <summary type="html">&lt;p&gt;KeyClue is an annual &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Puzzle_hunt&quot;&gt;puzzlehunt&lt;&#x2F;a&gt;&#x2F;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Alternate_reality_game&quot;&gt;ARG&lt;&#x2F;a&gt; played by Engineers at the University of Calgary. Departments compete to find a key hidden somewhere in the City - solving puzzles and unwinding the story as they go. Any team that finds &lt;em&gt;the&lt;&#x2F;em&gt; key must replace it with a false one, so no team can be sure if they won until it&#x27;s officially over.&lt;&#x2F;p&gt;
 &lt;p&gt;I played a lot of KeyClue in my undergrad, and this year I was involved in its development.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;chrsmth.github.io&#x2F;keyclue&#x2F;book.jpeg&quot; alt=&quot;book&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;chrsmth.github.io&#x2F;keyclue&#x2F;book.jpeg&quot; alt=&quot;book&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </summary>
         
     </entry>
@@ -30,12 +30,12 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://chrsmth.github.io/alberta-windsurfing-guide/" type="text/html"/>
-        <id>https://chrsmth.github.io/alberta-windsurfing-guide/</id>
+        <link rel="alternate" href="chrsmth.github.io/alberta-windsurfing-guide/" type="text/html"/>
+        <id>chrsmth.github.io/alberta-windsurfing-guide/</id>
         
         <summary type="html">&lt;p&gt;Southern Alberta is one of the windiest regions in Canada&lt;sup&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ec.gc.ca&#x2F;meteo-weather&#x2F;default.asp?lang=En&amp;amp;n=774B5B53-1&quot;&gt;[0]&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. Winds commonly range between 20 and 40 knots, and have been measured as high as 95&lt;sup&gt;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Pincher_Creek#Climate&quot;&gt;[2]&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;. For perspective, a hurricane starts at &lt;em&gt;just&lt;&#x2F;em&gt; 64 knots&lt;sup&gt;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Beaufort_scale#Modern_scale&quot;&gt;[3]&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;em&gt;This makes for great windsurfing.&lt;&#x2F;em&gt;
-&lt;img src=&quot;https:&#x2F;&#x2F;chrsmth.github.io&#x2F;alberta-windsurfing-guide&#x2F;windsurf.jpeg&quot; alt=&quot;windsurfing&quot; title=&quot;Keho at 40kts&quot; &#x2F;&gt; &lt;sup&gt;Keho lake at 40kts&lt;&#x2F;sup&gt; &lt;&#x2F;p&gt;
+&lt;img src=&quot;chrsmth.github.io&#x2F;alberta-windsurfing-guide&#x2F;windsurf.jpeg&quot; alt=&quot;windsurfing&quot; title=&quot;Keho at 40kts&quot; &#x2F;&gt; &lt;sup&gt;Keho lake at 40kts&lt;&#x2F;sup&gt; &lt;&#x2F;p&gt;
 </summary>
         
     </entry>
