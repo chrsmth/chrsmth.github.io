@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>chrsmth.github.io/</loc>
+        <loc>https://justpeanuts.ca/</loc>
     </url>
     <url>
-        <loc>chrsmth.github.io/about/</loc>
+        <loc>https://justpeanuts.ca/about/</loc>
     </url>
     <url>
-        <loc>chrsmth.github.io/alberta-windsurfing-guide/</loc>
+        <loc>https://justpeanuts.ca/alberta-windsurfing-guide/</loc>
         <lastmod>2024-01-15</lastmod>
     </url>
     <url>
-        <loc>chrsmth.github.io/categories/</loc>
+        <loc>https://justpeanuts.ca/categories/</loc>
     </url>
     <url>
-        <loc>chrsmth.github.io/keyclue/</loc>
+        <loc>https://justpeanuts.ca/keyclue/</loc>
         <lastmod>2024-01-18</lastmod>
     </url>
     <url>
-        <loc>chrsmth.github.io/tags/</loc>
+        <loc>https://justpeanuts.ca/tags/</loc>
     </url>
     <url>
-        <loc>chrsmth.github.io/tags/keyclue/</loc>
+        <loc>https://justpeanuts.ca/tags/keyclue/</loc>
     </url>
     <url>
-        <loc>chrsmth.github.io/tags/windsurfing/</loc>
+        <loc>https://justpeanuts.ca/tags/windsurfing/</loc>
     </url>
 </urlset>

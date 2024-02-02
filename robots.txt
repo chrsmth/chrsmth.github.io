@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: chrsmth.github.io/sitemap.xml
+Sitemap: https://justpeanuts.ca/sitemap.xml
