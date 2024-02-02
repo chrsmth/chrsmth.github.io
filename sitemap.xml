@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://justpeanuts.ca/</loc>
+        <loc>https://blog.chrsmth.ca/</loc>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/about/</loc>
+        <loc>https://blog.chrsmth.ca/about/</loc>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/alberta-windsurfing-guide/</loc>
+        <loc>https://blog.chrsmth.ca/alberta-windsurfing-guide/</loc>
         <lastmod>2024-01-15</lastmod>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/categories/</loc>
+        <loc>https://blog.chrsmth.ca/categories/</loc>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/keyclue/</loc>
+        <loc>https://blog.chrsmth.ca/keyclue/</loc>
         <lastmod>2024-01-18</lastmod>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/tags/</loc>
+        <loc>https://blog.chrsmth.ca/tags/</loc>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/tags/keyclue/</loc>
+        <loc>https://blog.chrsmth.ca/tags/keyclue/</loc>
     </url>
     <url>
-        <loc>https://justpeanuts.ca/tags/windsurfing/</loc>
+        <loc>https://blog.chrsmth.ca/tags/windsurfing/</loc>
     </url>
 </urlset>
